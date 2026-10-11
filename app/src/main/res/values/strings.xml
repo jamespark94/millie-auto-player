@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">밀리의 서재 오토 플레이어</string>
+    <string name="accessibility_service_description">차량 블루투스 연결 시 밀리의 서재 오디오북을 자동으로 재생해주는 자동화 서비스입니다.</string>
+</resources>
