@@ -161,8 +161,8 @@ class MillieMediaSessionService : NotificationListenerService() {
         // 컨트롤러 대상 미디어 키 전송 (보강)
         val down = KeyEvent(KeyEvent.ACTION_DOWN, KeyEvent.KEYCODE_MEDIA_PLAY)
         val up = KeyEvent(KeyEvent.ACTION_UP, KeyEvent.KEYCODE_MEDIA_PLAY)
-        millieController.dispatchMediaKeyEvent(down)
-        millieController.dispatchMediaKeyEvent(up)
+        millieController.dispatchMediaButtonEvent(down)
+        millieController.dispatchMediaButtonEvent(up)
 
         onPlaybackSuccess("▶ 밀리의 서재 미디어 세션 재생 시작!")
         return true
