@@ -19,6 +19,18 @@
             </intent-filter>
         </activity>
 
+        <!-- 1. 미디어 세션 및 알림 리스너 서비스 (핵심 오디오 제어) -->
+        <service
+            android:name=".MillieMediaSessionService"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <!-- 2. 보조 접근성 서비스 (UI 터치 폴백용) -->
         <service
             android:name=".MillieAccessibilityService"
             android:label="@string/app_name"
